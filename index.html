@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lorem ipsun</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="01">Lorem ipsun generator</h1>
+    <div class="container">
+      <h3 id="03">paragraphs:</h3>
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+      <h5 id="demo">0</h5>
+      <h3 id="05">words per paragraph:</h3>
+      <div class="slidecontainer">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="myRange2"
+        />
+      </div>
+      <h5 id="demo2">0</h5>
+      <h3 id="03">tag:</h3>
+      <select class="custom-select" id="tagselect">
+        <option value="p">p</option>
+        <option value="h1">h1</option>
+        <option value="h4">h4</option>
+      </select>
+      <h3 id="03">include html:</h3>
+      <select id="includeselect">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+      <div class="button" id="button">generate</div>
+      <form>
+        <textarea readonly id="write" class="output"></textarea>
+      </form>
+      <p id="write2"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
